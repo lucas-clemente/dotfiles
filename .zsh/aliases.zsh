@@ -44,7 +44,7 @@ alias _=sudo
 alias md='mkdir -p'
 alias ls='ls -Gh'
 alias la='ls -la'
-alias rm=trash
+alias tr=trash
 function git(){hub $@}
 alias hk='git push heroku master'
 alias stage='git push stage master'
