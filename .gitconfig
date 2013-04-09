@@ -1,0 +1,15 @@
+[user]
+	name = Lucas Clemente
+	email = luke.clemente@gmail.com
+[core]
+	excludesfile = /Users/lucas/.gitignore_global
+[branch]
+  autosetupmerge = true
+[grep]
+  lineNumber = true
+[color]
+	ui = 1
+[push]
+	default = matching
+[mergetool]
+	keepBackup = true
