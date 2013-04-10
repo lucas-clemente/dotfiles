@@ -1,7 +1,4 @@
 # Shell options
-host_in_prompt() {
-  hostname
-}
 setopt PROMPT_SUBST
 PROMPT='%B%F{green}$(hostname | perl -pe "s/liszt//; s/(\w)\$/\$1 /")%F{blue}$(pwd | perl -pe "s|^$HOME|~|g; s|/([^/])[^/]*(?=/)|/\$1|g") %F{red}→%f%b '
 
@@ -46,7 +43,7 @@ export RUBY_HEAP_FREE_MIN=500000
 
 # Stuff
 
-source ~/software/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ZSH_HIGHLIGHT_STYLES[default]=bold
 ZSH_HIGHLIGHT_STYLES[alias]=bold
 ZSH_HIGHLIGHT_STYLES[builtin]=bold
@@ -55,4 +52,4 @@ ZSH_HIGHLIGHT_STYLES[command]=bold
 ZSH_HIGHLIGHT_STYLES[commandseparator]=bold
 ZSH_HIGHLIGHT_STYLES[hashed-command]=bold
 
-source ~/software/zsh-history-substring-search/zsh-history-substring-search.zsh
+source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
