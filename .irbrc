@@ -30,3 +30,5 @@ rescue LoadError => err
   warn "Couldn't load Wirble: #{err}"
 end
 
+load '.irbrc' if File.exists?('.irbrc') && Dir.pwd != ENV['HOME']
+
