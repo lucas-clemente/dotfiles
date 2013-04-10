@@ -5,10 +5,8 @@
 /.XSManager
 /.Xauthority
 /.adobe
-/.android
 /.aqbanking
 /.artofillusion
-/.bash_history
 /.bash_profile
 /.bashrc
 /.bundler
@@ -30,7 +28,6 @@
 /.gem
 /.git
 /.gitk
-/.gnome2
 /.gnuplot_history
 /.guard_history
 /.heroku
