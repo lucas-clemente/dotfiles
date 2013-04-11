@@ -1,0 +1,33 @@
+#!/usr/bin/env ruby
+
+require 'rainbow'
+
+def exec_cmd(cmd, ignore_fail = false)
+  puts cmd.bright
+  if !system(cmd)
+    if ignore_fail
+      return 1
+    else
+      puts "Command failed, aborting.".color(:red)
+      exit 1
+    end
+  end
+end
+
+commit = false
+
+if ARGV.length == 0
+  msg = "Commit on #{Time.now}"
+else
+  if ARGV[0] == '-c'
+    ARGV.shift
+    commit = true
+  end
+  msg = ARGV * ' '
+end
+
+exec_cmd('git status')
+exec_cmd('git pull') unless commit
+exec_cmd('git add .')
+exec_cmd("git commit -am '#{msg}'", true)
+exec_cmd("git push") unless commit

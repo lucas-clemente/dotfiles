@@ -1,0 +1,10 @@
+#!/bin/bash
+
+inc="include/$1.h"
+src="src/$1.cpp"
+
+touch $inc $src
+git add $inc $src
+
+echo "Created $inc"
+echo "Created $src"
