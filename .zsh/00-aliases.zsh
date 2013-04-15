@@ -71,3 +71,4 @@ alias bi='brew install'
 alias bs='brew search'
 alias s='subl -n'
 pman() { man $1 -t | open -f -a Preview }
+alias cppgm="wget -qO- http://dev.cppgm.org/`whoami`.log"
