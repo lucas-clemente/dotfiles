@@ -1,6 +1,6 @@
 # Shell options
 setopt PROMPT_SUBST
-export PROMPT='%B%F{green}$(hostname | perl -pe "s/liszt//; s/(\w)\$/\$1 /")%F{blue}$(pwd | perl -pe "s|^$HOME|~|g; s|/([^/])[^/]*(?=/)|/\$1|g") %F{red}→%f%b '
+export PROMPT='%B%F{green}$(hostname -s | perl -pe "s/liszt//; s/(\w)\$/\$1 /")%F{blue}$(pwd | perl -pe "s|^$HOME|~|g; s|/([^/])[^/]*(?=/)|/\$1|g") %F{red}→%f%b '
 
 export TERM='xterm-color'
 export WORDCHARS='*?[]~&;!$%^<>'
