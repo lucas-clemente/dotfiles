@@ -62,6 +62,7 @@ alias ru="cd $UNIVEDO/runivedo"
 alias gs='git status -sb'
 alias gp='git push'
 alias gu='git pull --no-edit'
+alias gcm='git commit'
 alias gca='git commit -a'
 alias gb='git branch'
 alias gls='git ls-files'
