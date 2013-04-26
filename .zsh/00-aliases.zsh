@@ -45,8 +45,8 @@ alias ..='cd ..'
 alias ...='cd ...'
 alias _=sudo
 alias md='mkdir -p'
-alias ls='ls -Gh --color=auto'
-alias la='ls -la --color=auto'
+alias ls='ls -Gh'
+alias la='ls -la'
 alias t=trash
 alias hk='git push heroku master'
 alias stage='git push stage master'
