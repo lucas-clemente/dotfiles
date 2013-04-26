@@ -1,6 +1,9 @@
 # Aliases
 
 update() {
+  cd ~
+  git submodule -q foreach git pull -q origin master
+  cd - >/dev/null
   npm -g update
   gem update
   rbenv rehash
@@ -73,3 +76,4 @@ alias s='subl -n'
 pman() { man $1 -t | open -f -a Preview }
 alias cppgm="wget -qO- http://dev.cppgm.org/`whoami`.log"
 alias diff=colordiff
+alias git=hub
