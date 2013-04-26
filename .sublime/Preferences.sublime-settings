@@ -16,8 +16,8 @@
 	"scroll_past_end": true,
 	"show_tab_close_buttons": false,
 	"tab_size": 2,
-	"terminal": "/usr/local/zsh",
+	"terminal": "/usr/local/bin/zsh",
 	"theme": "Soda Light.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"word_wrap": "true"
+	"word_wrap": true
 }
