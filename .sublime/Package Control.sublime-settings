@@ -1,0 +1,35 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"Alignment",
+		"Bison",
+		"bison.tmbundle",
+		"CMake",
+		"CoffeeScript",
+		"Color Highlighter",
+		"ColorPick",
+		"DetectSyntax",
+		"Emmet",
+		"ERB Insert and Toggle Commands",
+		"Guard",
+		"jQuery",
+		"LaTeXTools",
+		"LESS",
+		"MarkdownBuild",
+		"Package Control",
+		"Prefixr",
+		"RubyTest",
+		"SCSS",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"SublimeTODO",
+		"Theme - Soda",
+		"Tomorrow Color Schemes"
+	],
+	"repositories":
+	[
+		"https://github.com/sergeche/emmet-sublime",
+		"https://github.com/textmate/bison.tmbundle"
+	]
+}

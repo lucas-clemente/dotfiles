@@ -1,0 +1,23 @@
+{
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/Tomorrow.tmTheme",
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Source Code Pro",
+	"font_size": 11.0,
+	"highlight_line": true,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"open_files_in_new_window": true,
+	"remember_open_files": false,
+	"save_on_focus_lost": true,
+	"scroll_past_end": true,
+	"show_tab_close_buttons": false,
+	"tab_size": 2,
+	"terminal": "/usr/local/zsh",
+	"theme": "Soda Light.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"word_wrap": "true"
+}

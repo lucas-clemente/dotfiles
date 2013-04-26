@@ -1,0 +1,6 @@
+[
+  { "keys": ["ctrl+c"], "command": "erb"},
+  { "keys": ["ctrl+shift+c"], "command": "color_pick" },
+  { "keys": ["super+v"], "command": "paste_and_indent" },
+  { "keys": ["ctrl+super+x"], "command": "prefixr" }
+]
