@@ -77,3 +77,4 @@ pman() { man $1 -t | open -f -a Preview }
 alias cppgm="wget -qO- http://dev.cppgm.org/`whoami`.log"
 alias diff=colordiff
 alias git=hub
+alias reload-zsh='source ~/.zshrc'
