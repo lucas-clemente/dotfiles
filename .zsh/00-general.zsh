@@ -12,6 +12,8 @@ setopt auto_cd
 bindkey -e
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
+bindkey "^[[3~"   delete-char
+bindkey "^H"      run-help
 
 # History
 HISTFILE=$HOME/.zsh_history
