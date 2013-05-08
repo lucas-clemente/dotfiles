@@ -105,3 +105,4 @@
 /.gremlin_groovy_history
 /.orientdb_history
 /.s3cfg
+/.node-gyp
