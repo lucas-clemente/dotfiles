@@ -41,6 +41,14 @@ ex() {
   fi
 }
 
+s() {
+  if which subl >/dev/null 2>&1; then
+    subl -n $*
+  else
+    rsub $*
+  fi
+}
+
 alias ..='cd ..'
 alias ...='cd ...'
 alias _=sudo
@@ -73,7 +81,6 @@ alias gls='git ls-files'
 alias ra='rails'
 alias bi='brew install'
 alias bs='brew search'
-alias s='subl -n'
 pman() { man $1 -t | open -f -a Preview }
 alias cppgm="wget -qO- http://dev.cppgm.org/`whoami`.log"
 alias diff=colordiff
