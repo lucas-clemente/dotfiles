@@ -79,3 +79,4 @@ alias cppgm="wget -qO- http://dev.cppgm.org/`whoami`.log"
 alias diff=colordiff
 alias git=hub
 alias reload-zsh='source ~/.zshrc'
+alias df=dfc
