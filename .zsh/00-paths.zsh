@@ -9,4 +9,5 @@ export PATH=/usr/local/heroku/bin:$PATH
 export PATH=/usr/local/go/bin:$PATH # Linux
 export PATH=~/.rbenv/bin:$PATH
 export PATH=~/src/go/bin:$PATH
+export PATH=~/.cabal/bin:$PATH
 export PATH=~/bin:$PATH
