@@ -9,8 +9,11 @@
 /.artofillusion
 /.bash_profile
 /.bashrc
+/.bower
 /.bundler
+/.cabal
 /.cache
+/.cocoapods
 /.codeintel
 /.config
 /.cups
@@ -26,9 +29,11 @@
 /.gdb_history
 /.gdbinit
 /.gem
+/.ghc
 /.git
 /.gitk
 /.gnuplot_history
+/.gremlin_groovy_history
 /.guard_history
 /.heroku
 /.hgignore_global
@@ -52,7 +57,9 @@
 /.mysql_history
 /.netrc
 /.neubot
+/.node-gyp
 /.npm
+/.orientdb_history
 /.pgpass
 /.pip
 /.povray
@@ -63,6 +70,7 @@
 /.rnd
 /.rubinius_last_error
 /.runivedo_history
+/.s3cfg
 /.sage
 /.selenium
 /.serverauth.14658
@@ -70,6 +78,7 @@
 /.slocdata
 /.sqlite_history
 /.ssh
+/.sublime
 /.subversion
 /.sympy-history
 /.textadept
@@ -102,11 +111,3 @@
 /src
 /test
 /univedo
-/.gremlin_groovy_history
-/.orientdb_history
-/.s3cfg
-/.node-gyp
-/.ghc
-/.cocoapods
-/.sublime
-/.cabal
