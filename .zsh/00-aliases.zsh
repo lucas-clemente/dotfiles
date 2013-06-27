@@ -87,3 +87,4 @@ alias diff=colordiff
 alias git=hub
 alias reload-zsh='source ~/.zshrc'
 alias df=dfc
+alias -g NUL=">/dev/null"
