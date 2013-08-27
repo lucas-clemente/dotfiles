@@ -1,10 +1,12 @@
 #!/bin/bash
 
-inc="include/$1.h"
-src="src/$1.cpp"
+for n in $*; do
+  inc="include/$n.h"
+  src="src/$n.cpp"
 
-touch $inc $src
-git add $inc $src
+  touch $inc $src
+  git add $inc $src
 
-echo "Created $inc"
-echo "Created $src"
+  echo "Created $inc"
+  echo "Created $src"
+done
