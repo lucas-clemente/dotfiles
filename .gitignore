@@ -109,3 +109,5 @@
 /src
 /test
 /univedo
+/.vagrant.d
+/.gnupg

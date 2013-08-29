@@ -1,6 +1,7 @@
 syntax on
 set tabstop=2
 set autoindent
+filetype indent plugin on
 set ruler
 set expandtab
 set number
