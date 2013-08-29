@@ -4,3 +4,9 @@
 [submodule ".zsh/zsh-history-substring-search"]
 	path = .zsh/zsh-history-substring-search
 	url = git://github.com/zsh-users/zsh-history-substring-search
+[submodule ".vim/maximum-awesome"]
+	path = .vim/maximum-awesome
+	url = git@github.com:square/maximum-awesome.git
+[submodule ".vim-maximum-awesome"]
+	path = .vim-maximum-awesome
+	url = git@github.com:square/maximum-awesome.git
