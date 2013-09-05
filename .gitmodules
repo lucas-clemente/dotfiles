@@ -1,9 +1,9 @@
 [submodule "zsh/.zsh/zsh-syntax-highlighting"]
 	path = zsh/.zsh/zsh-syntax-highlighting
-	url = git://github.com/zsh-users/zsh-syntax-highlighting.git
+	url = git@github.com:zsh-users/zsh-syntax-highlighting.git
 [submodule "zsh/.zsh/zsh-history-substring-search"]
 	path = zsh/.zsh/zsh-history-substring-search
-	url = git://github.com/zsh-users/zsh-history-substring-search
-[submodule "vim/vim/maximum-awesome"]
-	path = vim/vim/maximum-awesome
+	url = git@github.com:zsh-users/zsh-history-substring-search.git
+[submodule "vim/maximum-awesome"]
+	path = vim/maximum-awesome
 	url = git@github.com:square/maximum-awesome.git
