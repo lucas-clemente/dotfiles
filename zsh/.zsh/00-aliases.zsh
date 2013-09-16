@@ -1,9 +1,6 @@
 # Aliases
 
 update() {
-  cd ~
-  git submodule -q foreach git pull -q origin master
-  cd - >/dev/null
   npm -g update
   gem update
   rbenv rehash
