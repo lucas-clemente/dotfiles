@@ -1,6 +1,6 @@
 [user]
 	name = Lucas Clemente
-	email = luke.clemente@gmail.com
+	email = lucas@clemente.io
 [core]
 	excludesfile = ~/.gitignore_global
 [branch]
