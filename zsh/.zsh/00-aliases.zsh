@@ -56,6 +56,7 @@ alias t=trash
 alias hk='git push heroku master'
 alias stage='git push stage master'
 alias b=bundle
+alias be='bundle exec'
 alias la='ls -al'
 alias make='make -j9'
 alias pg='ping 8.8.8.8'
