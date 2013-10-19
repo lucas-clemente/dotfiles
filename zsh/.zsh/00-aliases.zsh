@@ -46,15 +46,12 @@ s() {
   fi
 }
 
-alias ..='cd ..'
-alias ...='cd ...'
 alias _=sudo
 alias md='mkdir -p'
 alias ls='ls -Gh'
 alias la='ls -la'
 alias t=trash
 alias hk='git push heroku master'
-alias stage='git push stage master'
 alias b=bundle
 alias be='bundle exec'
 alias la='ls -al'
@@ -67,6 +64,7 @@ alias gs='git status -sb'
 alias gp='git push'
 alias gu='git pull --no-edit'
 alias gci='git commit'
+alias ga='git add -A'
 alias gco='git checkout'
 alias gca='git commit -a'
 alias gb='git branch'
