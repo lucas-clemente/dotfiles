@@ -16,3 +16,7 @@ project.xcworkspace
 *.synctex.gz
 *.dSYM
 .vagrant
+*.toc
+*.bbl
+*.blg
+*.cites
