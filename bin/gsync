@@ -28,6 +28,6 @@ end
 
 exec_cmd('git status')
 #exec_cmd('git pull') unless commit
-exec_cmd('git add .')
+exec_cmd('git add -A .')
 exec_cmd("git commit -am '#{msg}'", true)
 exec_cmd("git push") unless commit
