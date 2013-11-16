@@ -21,3 +21,7 @@
 	trustExitCode = true
 [alias]
   subpull = submodule foreach git pull origin master
+[credential]
+	helper = osxkeychain
+[http]
+	sslCert = Lucas Clemente
