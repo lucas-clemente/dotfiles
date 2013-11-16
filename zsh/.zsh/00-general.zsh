@@ -13,8 +13,8 @@ export PYTHONPATH=/usr/local/lib/python2.7/site-packages
 setopt correct
 setopt auto_cd
 bindkey -e
-bindkey "^[[1;3C" forward-word
-bindkey "^[[1;3D" backward-word
+bindkey "^[[1;9C" forward-word
+bindkey "^[[1;9D" backward-word
 bindkey "^[[3~"   delete-char
 bindkey "^H"      run-help
 bindkey ' ' magic-space
