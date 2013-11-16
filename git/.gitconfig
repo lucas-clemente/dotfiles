@@ -2,7 +2,7 @@
 	name = Lucas Clemente
 	email = lucas@clemente.io
 [core]
-	excludesfile = ~/.gitignore_global
+	excludesfile = /Users/lucas/.gitignore_global
 [branch]
   autosetupmerge = true
 [grep]
