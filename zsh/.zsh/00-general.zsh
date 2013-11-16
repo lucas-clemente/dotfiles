@@ -2,6 +2,9 @@
 setopt PROMPT_SUBST
 export PROMPT='%B%F{green}$(hostname -s | perl -pe "s/liszt//i; s/(\w)\$/\$1 /")%F{blue}$(pwd | perl -pe "s|^$HOME|~|g; s|/([^/])[^/]*(?=/)|/\$1|g") %F{red}→%f%b '
 
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 export TERM='xterm-color'
 export WORDCHARS='*?[]~&;!$%^<>'
 export EDITOR=vim
