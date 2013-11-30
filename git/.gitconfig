@@ -3,6 +3,7 @@
 	email = lucas@clemente.io
 [core]
 	excludesfile = /Users/lucas/.gitignore_global
+	trustctime = false
 [branch]
   autosetupmerge = true
 [grep]
