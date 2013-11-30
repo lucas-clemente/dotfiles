@@ -78,3 +78,4 @@ alias diff=colordiff
 alias reload-zsh='source ~/.zshrc'
 alias df=dfc
 alias -g NUL=">/dev/null"
+alias sd='s .'
