@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'rainbow'
+require 'rainbow/ext/string'
 
 def exec_cmd(cmd, ignore_fail = false)
   puts cmd.bright
@@ -16,13 +17,16 @@ end
 
 commit = false
 
-if ARGV.length == 0
-  msg = "Commit on #{Time.now}"
-else
+if ARGV.length > 0
   if ARGV[0] == '-c'
     ARGV.shift
     commit = true
   end
+end
+
+if ARGV.length == 0
+  msg = "automated commit"
+else
   msg = ARGV * ' '
 end
 
