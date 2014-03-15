@@ -1,1 +1,1 @@
-export DOCKER_HOST=localhost
+export DOCKER_HOST=tcp://localhost:4243
