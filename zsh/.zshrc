@@ -36,7 +36,7 @@ DEFAULT_USER=lucas
 # Uncomment following line if you want to disable marking untracked files under
 # VCS as dirty. This makes repository status check for large repositories much,
 # much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment following line if you want to the command execution time stamp shown
 # in the history command output.
@@ -89,6 +89,11 @@ export PATH=~/src/go/bin:$PATH
 export PATH=~/.cabal/bin:$PATH
 export PATH=~/bin:$PATH
 
+# This loads NVM
+if [[ $(uname) == Darwin ]]; then
+  source $(brew --prefix nvm)/nvm.sh
+fi
+
 # General
 export EDITOR='vim'
 export HISTSIZE=100000
@@ -112,14 +117,17 @@ alias a=atom
 alias ad="atom ."
 alias b=bundle
 alias be='bundle exec'
-alias make='make -j8'
+alias make='make -j 8'
 alias pg='ping 8.8.8.8'
 alias op='open .'
 alias sv='ssh lclemente.dyndns.org'
 alias gs='git status -sb'
+alias gls='git ls-files'
+alias gA='git add -A :/'
 alias bi='brew install'
 alias bs='brew search'
 alias df=dfc
+alias ccat=colorize
 
 export DOCKER_HOST=tcp://localhost:4243
 export GOPATH=~/src/go
