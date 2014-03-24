@@ -4,6 +4,7 @@
 [core]
 	excludesfile = /Users/lucas/.gitignore_global
 	trustctime = false
+	editor = vim
 [branch]
   autosetupmerge = true
 [grep]
@@ -11,7 +12,7 @@
 [color]
 	ui = 1
 [push]
-	default = matching
+	default = simple
 [mergetool]
 	keepBackup = true
 	prompt = false
