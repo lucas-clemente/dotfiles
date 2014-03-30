@@ -102,6 +102,7 @@ export LC_ALL=en_US.UTF-8
 
 update() {
   npm -g update
+  yes | apm upgrade
   gem update && rbenv rehash
   brew update && brew upgrade
   brew cleanup
@@ -128,6 +129,7 @@ alias bi='brew install'
 alias bs='brew search'
 alias df=dfc
 alias ccat=colorize
+alias wiki='atom ~/Documents/wiki'
 
 export DOCKER_HOST=tcp://localhost:4243
 export GOPATH=~/src/go
