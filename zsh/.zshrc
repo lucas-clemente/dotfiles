@@ -138,11 +138,6 @@ whiteboardCleanup() {
   done
   wait
 }
-whiteboardReplaceCleaned() {
-  for f in *.clean.jpg; do
-    mv "$f" "$(basename $f .clean.jpg).jpg"
-  done
-}
 
 export DOCKER_HOST=tcp://localhost:4243
 export GOPATH=~/src/go
