@@ -145,6 +145,17 @@ fi
 
 export GOPATH=~/src/go
 
+# Enable autosuggestions
+# To install: git clone git://github.com/tarruda/zsh-autosuggestions ~/.zsh-autosuggestions
+source ~/.zsh-autosuggestions/autosuggestions.zsh
+export AUTOSUGGESTION_HIGHLIGHT_COLOR='fg=248'
+bindkey '^F' forward-word
+zle-line-init() {
+  zle autosuggest-start
+}
+zle -N zle-line-init
+
+
 if [[ -o login ]]; then
   echo "  .=."
   echo " '==c|"
