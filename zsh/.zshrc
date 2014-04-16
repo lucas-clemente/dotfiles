@@ -58,7 +58,6 @@ plugins=(
   git
   github
   go
-  history-substring-search
   npm
   nvm
   rails
@@ -69,6 +68,7 @@ plugins=(
   vagrant
   xcode
   zsh-syntax-highlighting
+  history-substring-search
 )
 
 source $ZSH/oh-my-zsh.sh
