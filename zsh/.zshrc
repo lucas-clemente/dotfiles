@@ -139,7 +139,10 @@ whiteboardCleanup() {
   wait
 }
 
-export DOCKER_HOST=tcp://localhost:4243
+if [[ $(uname) == Darwin ]]; then
+  export DOCKER_HOST=tcp://vagrant:4243
+fi
+
 export GOPATH=~/src/go
 
 if [[ -o login ]]; then
