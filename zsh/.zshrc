@@ -129,6 +129,7 @@ alias gA='git add -A :/'
 alias bi='brew install'
 alias bs='brew search'
 alias df=dfc
+alias du='du -h'
 alias ccat=colorize
 alias wiki='atom ~/Documents/wiki'
 # From https://gist.github.com/lelandbatey/8677901
