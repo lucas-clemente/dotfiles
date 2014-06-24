@@ -137,6 +137,25 @@ whiteboardCleanup() {
   wait
 }
 
+ip() {
+  local WIFI=`ipconfig getifaddr en0 2> /dev/null`
+  local ETHERNET=`ipconfig getifaddr en5 2> /dev/null`
+  local EXT=`curl -s http://checkip.dyndns.org/ | grep -o '[0-9][0-9]*.[0-9][0-9]*.[0-9][0-9]*.[0-9]*'`
+
+  if [ "$ETHERNET" != "" ]; then
+    echo -n -e "Ethernet:\t "
+    echo -e $ETHERNET
+  fi
+
+  if [ "$WIFI" != "" ]; then
+    echo -n -e "WiFi:\t\t "
+    echo -e $WIFI
+  fi
+
+  echo -n -e "External:\t "
+  echo -e $EXT
+}
+
 if [[ $(uname) == Darwin ]]; then
   export DOCKER_HOST=tcp://vagrant:4243
 fi
