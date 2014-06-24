@@ -51,7 +51,6 @@ plugins=(
   autojump
   bower
   brew
-  bundler
   colorize
   docker
   extract
@@ -62,7 +61,7 @@ plugins=(
   nvm
   rails
   rake
-  rbenv
+  rvm
   ruby
   sudo
   vagrant
@@ -79,13 +78,11 @@ source $ZSH/oh-my-zsh.sh
 
 # Paths
 export PATH=/usr/local/sbin:$PATH
-export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/share/npm/bin:$PATH
 export PATH=/usr/local/texlive/2012/bin/x86_64-darwin:$PATH
 export PATH=/usr/local/heroku/bin:$PATH
 export PATH=/usr/local/go/bin:$PATH # Linux
 export PATH=$(go env GOROOT)/bin:$PATH
-export PATH=~/.rbenv/bin:$PATH
 export PATH=~/src/go/bin:$PATH
 export PATH=~/.cabal/bin:$PATH
 export PATH=~/bin:$PATH
@@ -104,7 +101,7 @@ export LC_ALL=en_US.UTF-8
 update() {
   npm -g update
   yes | apm upgrade
-  gem update && rbenv rehash
+  gem update
   brew update && brew upgrade
   brew cleanup
 }
@@ -165,3 +162,5 @@ if [[ -o login ]]; then
   echo "/]==;\\"
   echo
 fi
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
