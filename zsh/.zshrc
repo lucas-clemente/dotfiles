@@ -123,6 +123,8 @@ alias df=dfc
 alias du='du -h'
 alias ccat=colorize
 alias wiki='atom ~/Documents/wiki'
+alias texwatch='latexmk -pdf -pvc -interaction=nonstopmode'
+
 # From https://gist.github.com/lelandbatey/8677901
 whiteboardCleanup() {
   for f in "$@"; do
