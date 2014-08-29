@@ -58,7 +58,6 @@ plugins=(
   github
   go
   npm
-  nvm
   rails
   rake
   rvm
@@ -86,11 +85,6 @@ export PATH=$(go env GOROOT)/bin:$PATH
 export PATH=~/src/go/bin:$PATH
 export PATH=~/.cabal/bin:$PATH
 export PATH=~/bin:$PATH
-
-# This loads NVM
-if [[ $(uname) == Darwin ]]; then
-  source $(brew --prefix nvm)/nvm.sh
-fi
 
 # General
 export EDITOR='vim'
