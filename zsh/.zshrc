@@ -75,6 +75,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+autoload -Uz vcs_info
 
 # Paths
 export PATH=/usr/local/sbin:$PATH
