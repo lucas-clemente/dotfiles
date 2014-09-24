@@ -65,6 +65,7 @@ plugins=(
   sudo
   vagrant
   xcode
+  nvm
   zsh-syntax-highlighting
   history-substring-search
 )
@@ -167,6 +168,10 @@ zle-line-init() {
   zle autosuggest-start
 }
 zle -N zle-line-init
+
+source $(brew --prefix nvm)/nvm.sh
+export NVM_DIR=~/.nvm
+nvm use default
 
 
 if [[ -o login ]]; then
