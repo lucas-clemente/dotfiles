@@ -123,6 +123,7 @@ alias bi='brew install'
 alias bs='brew search'
 alias df=dfc
 alias du='du -h'
+alias dus='du -hs'
 alias ccat=colorize
 alias wiki='atom ~/Documents/wiki'
 alias texwatch='latexmk -pdf -pvc -interaction=nonstopmode'
