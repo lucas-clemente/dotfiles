@@ -49,23 +49,25 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 plugins=(
   atom
   autojump
+  boot2docker
   bower
   brew
   colorize
   docker
+  ember-cli
   extract
   git
-  github
   go
+  golang
   npm
+  nvm
+  osx
   rails
   rake
-  rvm
   ruby
   sudo
   vagrant
   xcode
-  nvm
   zsh-syntax-highlighting
   history-substring-search
 )
@@ -95,10 +97,14 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 update() {
-  npm -g update
-  yes | apm upgrade
+  # echo '=> atom'
+  # yes | apm upgrade
+  echo '=> rubygems'
   gem update
-  brew update && brew upgrade
+  echo '=> atom'
+  apm update -c false
+  echo '=> brew'
+  brew update && brew upgrade --all
   brew cleanup
 }
 
@@ -127,6 +133,11 @@ alias dus='du -hs'
 alias ccat=colorize
 alias wiki='atom ~/Documents/wiki'
 alias texwatch='latexmk -pdf -pvc -interaction=nonstopmode'
+alias network_ports='sudo lsof -i -P | grep -i "listen"'
+alias a2c='aria2c -x8'
+alias grbi='git rebase -i -p'
+alias dl='cd ~/Downloads && a2c'
+alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 
 # From https://gist.github.com/lelandbatey/8677901
 whiteboardCleanup() {
@@ -156,7 +167,9 @@ ip() {
 }
 
 if [[ $(uname) == Darwin ]]; then
-  export DOCKER_HOST=tcp://vagrant:4243
+  export DOCKER_HOST=tcp://192.168.59.103:2376
+  export DOCKER_CERT_PATH=/Users/lucas/.boot2docker/certs/boot2docker-vm
+  export DOCKER_TLS_VERIFY=1
 fi
 
 export GOPATH=~/src/go
