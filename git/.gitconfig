@@ -26,8 +26,6 @@
   subpull = submodule foreach git pull origin master
 [credential]
 	helper = osxkeychain
-[http]
-	sslCert = Lucas Clemente
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [diff]
@@ -44,3 +42,7 @@
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
+[github]
+	user = lucas-clemente
+[ghi]
+	token = !security find-internet-password -a lucas-clemente -s github.com -l 'ghi token' -w

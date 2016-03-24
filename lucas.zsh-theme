@@ -34,7 +34,7 @@ build_prompt() {
   prompt_status
   prompt_context
   prompt_dir
-  /usr/local/bin/git-radar --zsh
+  /usr/local/bin/git-radar --zsh | tr -d '\n'
   echo -ne " %F{red}→%f%b "
 }
 

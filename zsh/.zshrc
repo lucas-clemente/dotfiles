@@ -60,7 +60,6 @@ plugins=(
   go
   golang
   npm
-  nvm
   osx
   rails
   rake
@@ -88,6 +87,7 @@ export PATH=/usr/local/go/bin:$PATH # Linux
 export PATH=$(go env GOROOT)/bin:$PATH
 export PATH=~/src/go/bin:$PATH
 export PATH=~/.cabal/bin:$PATH
+export PATH=~/.cargo/bin:$PATH
 export PATH=~/bin:$PATH
 
 # General
@@ -119,7 +119,8 @@ alias ad="atom ."
 alias b=bundle
 alias be='bundle exec'
 alias make='make -j 8'
-alias pg='ping 8.8.8.8'
+alias pg='prettyping --nolegend 8.8.8.8'
+alias pg6='prettyping -6 --nolegend 2001:4860:4860::8888'
 alias op='open .'
 alias sv='ssh lclemente.dyndns.org'
 alias gs='git status -sb'
@@ -132,7 +133,7 @@ alias du='du -h'
 alias dus='du -hs'
 alias ccat=colorize
 alias wiki='atom ~/Documents/wiki'
-alias texwatch='latexmk -pdf -pvc -interaction=nonstopmode'
+alias texwatch='latexmk -pdf -pvc -interaction=nonstopmode -synctex=1'
 alias network_ports='sudo lsof -i -P | grep -i "listen"'
 alias a2c='aria2c -x8'
 alias grbi='git rebase -i -p'
@@ -167,12 +168,13 @@ ip() {
 }
 
 if [[ $(uname) == Darwin ]]; then
-  export DOCKER_HOST=tcp://192.168.59.103:2376
-  export DOCKER_CERT_PATH=/Users/lucas/.boot2docker/certs/boot2docker-vm
-  export DOCKER_TLS_VERIFY=1
+  eval "$(docker-machine env default)"
 fi
 
 export GOPATH=~/src/go
+
+# For rust openssl
+export DEP_OPENSSL_INCLUDE=/usr/local/opt/openssl/include
 
 # Enable autosuggestions
 # To install: git clone git://github.com/tarruda/zsh-autosuggestions ~/.zsh-autosuggestions
@@ -184,13 +186,11 @@ zle-line-init() {
 }
 zle -N zle-line-init
 
-source $(brew --prefix nvm)/nvm.sh
-export NVM_DIR=~/.nvm
-nvm use default
-
+# See http://zmwangx.github.io/blog/2015-09-21-zsh-51-and-bracketed-paste.html
+unset zle_bracketed_paste
 
 if [[ -o login ]]; then
-  echo "  .=."
+echo "  .=."
   echo " '==c|"
   echo " [)-+|"
   echo " //'_|"
@@ -198,4 +198,5 @@ if [[ -o login ]]; then
   echo
 fi
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+source /Users/lucas/.iterm2_shell_integration.zsh

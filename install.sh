@@ -16,4 +16,4 @@ mkdir -p $HOME/.oh-my-zsh/custom/themes
 ln -s $(pwd)/lucas.zsh-theme $HOME/.oh-my-zsh/custom/themes
 
 cd vim/maximum-awesome
-rake
+#rake

@@ -12,10 +12,14 @@ CMakeScripts
 project.xcworkspace
 *.aux
 *.log
-*.synctex.gz
+*.synctex.gz*
 *.dSYM
 .vagrant
 *.toc
-*.bbl
 *.blg
 *.cites
+*.fdb_latexmk
+*.fls
+*.out
+*Notes.bib
+__pycache__
